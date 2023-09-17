@@ -1,4 +1,4 @@
-import { NavLinkItem } from "../types/navigationLink";
+import { NavLinkItem } from './types/navigationLink';
 import Link from 'next/link';
 
 export function Navigation({ navLinks }: { navLinks: NavLinkItem[] }) {
