@@ -1,20 +1,19 @@
 import Image from "next/image";
 import { Picture } from "./types/types";
 
-type PictureProps = {
+type PictureItemProps = {
   item: Picture,
 }
 
-export default function PictureItem({ item }: PictureProps) {
+export default function PictureItem({ item }: PictureItemProps) {
   return (
     <Image
-    style={{ position: 'relative', height: '400px' }}
-      src={ item.url}
+      src={item.url}
       alt={item.title}
       width={500}
       height={500}
       title={item.title}
       quality={85}
-      />
+    />
   )
 }

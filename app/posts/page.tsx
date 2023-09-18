@@ -1,4 +1,4 @@
-import { Post } from './types/post';
+import { Post } from '../components/post/types/types';
 import { shortenString } from '@/app/utils/shortenString';
 import PostItem from '../components/post/post';
 
