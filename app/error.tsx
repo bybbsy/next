@@ -1,14 +1,11 @@
 'use client'
+import { ErrorItem } from "./components/error/error";
 
-import Link from "next/link";
-
-export default function Error({ error, reset }: {error: Error, reset: () => void}) {
- return (
-  <div>
-    <span>Something went wrong</span>
-    <p>
-      <Link href='/'>Main page</Link>
-    </p>
-  </div>
- )
+export default function Error({ error }: { error: Error }) {
+  return (
+    <ErrorItem
+      message={`${error.name} ${error.message}` || 'Something went wrong'}
+      extraInfo={error.stack || ''}
+    />
+  )
 }
