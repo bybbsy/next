@@ -3,7 +3,7 @@ import { PictureItemProps } from "./types/pictureItemProps";
 
 export default function PictureItem({ item }: PictureItemProps) {
   return (
-    <picture>
+    <picture className=" justify-center">
       <Image
         src={item.url}
         alt={item.title}
