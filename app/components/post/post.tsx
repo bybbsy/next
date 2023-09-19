@@ -1,9 +1,5 @@
-import { Post } from "@/app/components/post/types/types";
 import Link from "next/link";
-
-type PostItemProps = {
-  item: Post,
-}
+import { PostItemProps } from "./types/postItemProps";
 
 export default function PostItem({ item }: PostItemProps) {
   return (

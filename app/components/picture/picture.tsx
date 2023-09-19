@@ -1,9 +1,5 @@
 import Image from "next/image";
-import { Picture } from "./types/types";
-
-type PictureItemProps = {
-  item: Picture,
-}
+import { PictureItemProps } from "./types/pictureItemProps";
 
 export default function PictureItem({ item }: PictureItemProps) {
   return (

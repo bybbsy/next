@@ -1,4 +1,4 @@
-import { Post } from '@/app/components/post/types/types';
+import { Post } from '@/app/components/post/types/post';
 import { PostComment } from '../types/comment';
 
 export default async function PostById({ params }: { params: { id: number } }) {

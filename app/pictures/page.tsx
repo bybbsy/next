@@ -1,5 +1,5 @@
 import PictureItem from "../components/picture/picture";
-import { Picture } from "../components/picture/types/types"
+import { Picture } from "../components/picture/types/picture"
 import { Search } from "../components/search/search";
 import { SearchParams } from "../posts/types/searchParams";
 import { filterFetchedData } from "../utils/filterFetchData";

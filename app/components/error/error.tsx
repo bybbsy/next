@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ErrorItemProps } from "./types/types"
+import { ErrorItemProps } from "./types/errorItemProps"
 
 export function ErrorItem({ message, extraInfo }: ErrorItemProps) {
   return (

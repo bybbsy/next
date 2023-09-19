@@ -1,10 +1,7 @@
 'use client'
 import { usePathname, useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
-
-type SearchProps = {
-  field: string
-}
+import { SearchProps } from "./types/searchProps";
 
 export function Search({ field }: SearchProps) {
   const router = useRouter();
@@ -13,7 +10,7 @@ export function Search({ field }: SearchProps) {
 
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => setInput(e.target.value);
 
-  const handleSubmit = (e: FormEvent<HTMLIFrameElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setInput('');
     const searchParams = new URLSearchParams({ [field]: input });
